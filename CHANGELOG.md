@@ -1,3 +1,39 @@
+<a name="1.0.2"></a>
+
+# [1.0.2](2023-01-19)
+
+## Features
+
+Adding ability for display name of model property
+
+### example
+
+```ts
+class TestingClass {
+    @ApiModelProperty({
+        description: 'Id of version',
+        required: false,
+        example: '123456789',
+        name: 'attribute-a',
+    })
+    attributeA: string;
+
+    @ApiModelProperty({
+        description: 'Id of version',
+        required: true,
+        example: '123456789',
+        name: 'attribute-b',
+    })
+    attributeB: string;
+
+    constructor(attA: string, attB = 'ModelPropertyAttrB') {
+        this.attributeA = attA;
+        this.attributeB = attB;
+    }
+}
+
+```
+
 <a name="1.0.1"></a>
 
 # [1.0.1](2018-12-4)

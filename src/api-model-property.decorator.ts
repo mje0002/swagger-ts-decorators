@@ -48,6 +48,11 @@ export interface IApiModelPropertyArgs {
    * Define example.
    */
   example?: any | any[];
+
+  /**
+   * Display Name
+   */
+  name?: string;
 }
 
 export function ApiModelProperty(
