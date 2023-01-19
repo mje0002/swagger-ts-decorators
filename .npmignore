@@ -15,6 +15,7 @@ lib-cov
 .travis.yml
 .prettierrc
 .eslintrc.js
+.vscode
 tsconfig.*
 tslint.*
 lcov.info
