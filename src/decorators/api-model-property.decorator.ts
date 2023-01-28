@@ -1,5 +1,5 @@
 import { SwaggerService } from '@/swagger.service';
-import { IApiOperationArgsBase } from './i-api-operation-args.base';
+import { IApiOperationArgsBase } from '../i-api-operation-args.base';
 
 export interface IApiModelPropertyArgs {
   /**

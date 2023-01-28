@@ -8,7 +8,7 @@ import {
   ISwaggerDefinitionProperty,
   ISwaggerPath,
 } from '../../src/i-swagger';
-import { IApiPathArgs } from '../../src/api-path.decorator';
+import { IApiPathArgs } from '../../src/decorators/api-path.decorator';
 import { IApiOperationGetArgs } from '../../src/api-operation-get.decorator';
 import { IApiOperationPostArgs } from '../../src/api-operation-post.decorator';
 import { IApiOperationPutArgs } from '../../src/api-operation-put.decorator';

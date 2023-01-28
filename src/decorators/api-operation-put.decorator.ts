@@ -1,5 +1,5 @@
-import { SwaggerService } from './swagger.service';
-import { IApiOperationArgsBase } from './i-api-operation-args.base';
+import { SwaggerService } from '../swagger.service';
+import { IApiOperationArgsBase } from '../i-api-operation-args.base';
 export type IApiOperationPutArgs = IApiOperationArgsBase;
 
 export function ApiOperationPut(args: IApiOperationPutArgs): MethodDecorator {

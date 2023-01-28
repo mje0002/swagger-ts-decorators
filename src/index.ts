@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 
-export { IApiPathArgs, ApiPath } from '@/api-path.decorator';
+export { IApiPathArgs, ApiPath } from '@/decorators/api-path.decorator';
 export {
   IApiOperationGetArgs,
   ApiOperationGet,
