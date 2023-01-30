@@ -39,7 +39,7 @@
         // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
         "typeRoots": [
             "node_modules/@types",
-            "node_modules/**/types",
+            "node_modu  les/**/types",
             "reflect-metadata"
         ], /* Specify multiple folders that act like `./node_modules/@types`. */
         // "types": ["reflect-metadata"],                       /* Specify type package names to be included without being referenced in a source file. */
