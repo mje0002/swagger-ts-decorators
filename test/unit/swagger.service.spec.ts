@@ -8,12 +8,12 @@ import {
   ISwaggerDefinitionProperty,
   ISwaggerPath,
 } from '../../src/i-swagger';
-import { IApiPathArgs } from '../../src/api-path.decorator';
-import { IApiOperationGetArgs } from '../../src/api-operation-get.decorator';
-import { IApiOperationPostArgs } from '../../src/api-operation-post.decorator';
-import { IApiOperationPutArgs } from '../../src/api-operation-put.decorator';
-import { IApiOperationPatchArgs } from '../../src/api-operation-patch.decorator';
-import { IApiOperationDeleteArgs } from '../../src/api-operation-delete.decorator';
+import { IApiPathArgs } from '../../src/decorators/api-path.decorator';
+import { IApiOperationGetArgs } from '../../src/decorators/api-operation-get.decorator';
+import { IApiOperationPostArgs } from '../../src/decorators/api-operation-post.decorator';
+import { IApiOperationPutArgs } from '../../src/decorators/api-operation-put.decorator';
+import { IApiOperationPatchArgs } from '../../src/decorators/api-operation-patch.decorator';
+import { IApiOperationDeleteArgs } from '../../src/decorators/api-operation-delete.decorator';
 import { SwaggerDefinitionConstant } from '../../src/swagger-definition.constant';
 import { ISwaggerBuildDefinitionModel } from '../../src/swagger.builder';
 

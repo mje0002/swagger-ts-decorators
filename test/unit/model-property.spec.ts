@@ -2,7 +2,7 @@ import { SwaggerService } from '../../src/swagger.service';
 import {
   ApiModelProperty,
   IApiModelPropertyArgs,
-} from '../../src/api-model-property.decorator';
+} from '../../src/decorators/api-model-property.decorator';
 
 describe('api-model-property.decorator.ts', () => {
   let testingClass: any | undefined;

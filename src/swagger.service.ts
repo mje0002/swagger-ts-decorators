@@ -1,10 +1,10 @@
 import * as assert from 'assert';
 import * as _ from 'lodash';
 import { IApiModelArgs } from '.';
-import { IApiModelPropertyArgs } from './api-model-property.decorator';
-import { IApiOperationGetArgs } from './api-operation-get.decorator';
-import { IApiOperationPostArgs } from './api-operation-post.decorator';
-import { IApiPathArgs } from './api-path.decorator';
+import { IApiModelPropertyArgs } from './decorators/api-model-property.decorator';
+import { IApiOperationGetArgs } from './decorators/api-operation-get.decorator';
+import { IApiOperationPostArgs } from './decorators/api-operation-post.decorator';
+import { IApiPathArgs } from './decorators/api-path.decorator';
 import {
   IApiBodyOperationArgsBaseParameter,
   IApiOperationArgsBase,
