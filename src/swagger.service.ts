@@ -84,6 +84,10 @@ export class SwaggerService {
     this.data.openapi = openapi;
   }
 
+  public setSpecification(specification: 'openapi' | 'jsonapi'): void {
+    this.data.specification = specification;
+  }
+
   public setInfo(info: ISwaggerInfo): void {
     this.data.info = info;
   }
@@ -393,6 +397,7 @@ export class SwaggerService {
         title: '',
         version: '',
       } as ISwaggerInfo,
+      specification: 'openapi',
       paths: {},
       tags: [],
       schemes: [SwaggerDefinitionConstant.Scheme.HTTP],

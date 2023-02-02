@@ -15,20 +15,28 @@ export interface ISwaggerExpressOptions {
    * Swagger Definition.
    */
   definition?: ISwaggerBuildDefinition;
+
+  /**
+   * The Type of API specification being leveraged
+   */
+  specification?: 'openapi' | 'jsonapi';
 }
 
+const defaults: Pick<ISwaggerExpressOptions, 'specification' | 'path'> = {
+  specification: 'openapi',
+  path: '/api-docs/swagger.json',
+};
+
 export function express(options?: ISwaggerExpressOptions): Router {
-  let path = '/api-docs/swagger.json';
+  let settings: ISwaggerExpressOptions = defaults;
   if (options) {
-    assert.ok(options.definition, 'Definition is required.');
-    if (options.path) {
-      path = options.path;
-    }
-    if (options.definition) {
-      build(options.definition);
+    settings = Object.assign(defaults, options);
+    assert.ok(settings.definition, 'Definition is required.');
+    if (settings.definition) {
+      build(settings.definition, settings.specification);
     }
   }
-  const router = buildRouter(path);
+  const router = buildRouter(settings.path as string);
   return router;
 }
 

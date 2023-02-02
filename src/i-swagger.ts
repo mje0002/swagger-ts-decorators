@@ -133,6 +133,7 @@ export interface ISwaggerDefinition {
 export interface ISwagger {
   basePath?: string;
   openapi?: string;
+  specification: 'openapi' | 'jsonapi';
   info: ISwaggerInfo;
   servers?: [ISwaggerServer];
   paths?: { [key: string]: ISwaggerPath };

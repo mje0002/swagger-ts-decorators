@@ -164,7 +164,10 @@ export interface ISwaggerBuildDefinition {
   responses?: { [key: string]: IApiOperationArgsBaseResponse };
 }
 
-export function build(buildDefinition: ISwaggerBuildDefinition): void {
+export function build(
+  buildDefinition: ISwaggerBuildDefinition,
+  specification?: 'openapi' | 'jsonapi',
+): void {
   assert.ok(buildDefinition, 'Definition are required.');
   assert.ok(
     buildDefinition.info,
@@ -175,6 +178,9 @@ export function build(buildDefinition: ISwaggerBuildDefinition): void {
   }
   if (buildDefinition.openapi) {
     SwaggerService.getInstance().setOpenapi(buildDefinition.openapi);
+  }
+  if (specification) {
+    SwaggerService.getInstance().setSpecification(specification);
   }
   if (buildDefinition.info) {
     SwaggerService.getInstance().setInfo(buildDefinition.info);
